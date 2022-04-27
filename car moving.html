@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>car moving in track</title>
+<style>
+
+body{margin:0px; 
+	padding:0px;
+	overflow:hidden;
+}
+
+.badal{height:100%; width:100%; 
+	background-repeat:no-repeat;
+	background-image:url("cloud.png");
+	background-size:100% 100%;
+	position:absolute;
+	animation:badalmove linear 1s infinite;
+	
+}
+
+.trees{height:50%; width:200%; 
+	background-image:url("trees2.png");
+	background-size:100% 100%;
+	position:absolute;
+	top:370px;
+	animation:treesmove linear 1s infinite;
+}
+
+.track{height:30%; width:800%; 
+	background-image:url("road2.png");
+	background-size:100% 100%;
+	position:absolute;
+	top:500px;
+	animation:movecar linear 1s infinite;
+
+}
+
+.car{height:100px; width:380px;
+	background-image:url("car2c.png");
+	background-size:cover;
+	position:absolute;
+	bottom:100px;
+	left:300px;
+	animation:carupdown linear .5s infinite;
+
+}
+
+.tyre{
+}
+
+.wheel1 img{height:55px;
+width:55px;
+position:relative;
+left:275px;
+bottom:-53px;
+animation:wheelRotation linear .5s infinite;
+}
+
+.wheel2 img{height:55px;
+width:55px;
+position:relative;
+left:37px;
+bottom:5px;
+animation:wheelRotation linear .5s infinite;
+}
+
+@keyframes wheelRotation{
+100%{
+transform:rotate(360deg);}
+
+}
+	/* @keyframes badalmove{
+	100%{transform:translatex(-500vw);}
+	} */
+@keyframes movecar{
+100%{transform:translatex(-500vw);}
+}
+
+@keyframes treesmove{
+	100%{transform:translatex(-100vw);}
+
+}
+
+@keyframes carupdown{
+0%{transform:translatey(0px);}
+50%{transform:translatey(5px);}
+100%{transform:translatey(0px);}
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="badal">	
+		<div class="trees"></div>
+		<div class="track"></div>
+		<div class="car">
+			<div class="tyres">
+				<div class=wheel1>
+				<img src="car alloy.png"></img>
+				</div>
+				<div class=wheel2><img src="car alloy.png"></img></div>
+			<div>
+		</div>
+	</div>
+</div>
+<h1>niint</h1>
+</body>
+
+</html>
